@@ -11,6 +11,7 @@
             var User = document.getElementById("TextBox1").value;
             var Pass = document.getElementById("TextBox2").value;
             var Pass1 = document.getElementById("TextBox3").value;
+            var symbolRegex = /[\!\@\#\$\%\^\&\*\(\)\_\+\.\,\;\:\-]/;
 
             if (User == "" && Pass == "")
             {
@@ -43,16 +44,16 @@
                 return false;
             }
 
-            else if (Pass.length < 8||Pass.length > 15) {
-                alert("Invalid Length Password at least 8 character ");
-                document.getElementById("TextBox2").focus();
-                return false;
-            }
-            else if (Pass == Pass1) {
-                alert("Password do not Match.Try again");
-                document.getElementById("TextBox3").focus();
-                return false;
-            }
+           else if (!symbolRegex.test(Pass)) { // Check if password contains at least one symbol
+           alert("Password must contain at least one symbol: !, @, #, $, %, ^, &, *, (, ), _, +, ., ,, ;, :, -");
+           document.getElementById("TextBox2").focus();
+           return false;
+           } 
+           else if (Pass != Pass1) {
+           alert("Password do not Match. Try again");
+           document.getElementById("TextBox3").focus();
+           return false;
+           }
             
             return true;
 
