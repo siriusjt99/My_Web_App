@@ -31,7 +31,7 @@ namespace My_Web_App
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
                     // Set the values of the parameters in the SqlCommand object
-                    command.Parameters.AddWithValue("@Name", txtDoctorName.Text);
+                    command.Parameters.AddWithValue("@DoctorName", txtDoctorName.Text);
                     command.Parameters.AddWithValue("@Specialization", txtDoctorSpecialization.Text);
                    
 

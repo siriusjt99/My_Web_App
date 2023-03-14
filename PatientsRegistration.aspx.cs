@@ -32,9 +32,10 @@ namespace My_Web_App
             using (SqlCommand command = new SqlCommand(query, connection))
             {
                 // Set the values of the parameters in the SqlCommand object
-                command.Parameters.AddWithValue("@Name", txtPatientName.Text);
+                command.Parameters.AddWithValue("@PatientName", txtPatientName.Text);
                 command.Parameters.AddWithValue("@RegistrationDate", Convert.ToDateTime(txtRegistrationDate.Text));
                 command.Parameters.AddWithValue("@Age", Convert.ToInt32(txtPatientAge.Text));
+                command.Parameters.AddWithValue("@DoctorName", Convert.ToInt32(txtDoctorName.Text));
 
                 // Open the database connection
                 connection.Open();

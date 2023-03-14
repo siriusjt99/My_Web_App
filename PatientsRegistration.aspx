@@ -28,6 +28,12 @@
                 <asp:TextBox ID="TextBox3" runat="server" BackColor="#CCCCCC" Height="28px" Width="185px"></asp:TextBox>
                 <br />
                 <br />
+                <asp:Label ID="lblDoctorName" runat="server" Text="Doctor Name" ForeColor="#333333"></asp:Label>
+                <br />
+                <br />
+                <asp:TextBox ID="txtDoctorName" runat="server" BackColor="#CCCCCC" Height="28px" Width="185px"></asp:TextBox>
+                <br />
+                <br />
                 <asp:Label ID="lblPatientId" runat="server" Text=""></asp:Label>
 
                 <br />
