@@ -12,3 +12,27 @@
 🟣The user should be able to click one of the patient record and perform – Edit or Delete of Patient Record. The Patient Id and Doctor Id should not be allowed to edit
 
 🟣Menu options to add new Patient Record & Doctor Record in the database. The Patient Id and Doctor Id should be auto generated and should be shown to the user after successful saving of the record.
+
+
+How to Run
+
+1- Install the following:
+
+Microsoft Visual Studio
+Microsoft SQL Server Express
+Microsoft SQL Server Management Studio (SSMS)
+
+
+🔴Login Form
+
+![image](https://user-images.githubusercontent.com/103328270/224983022-844c9bb8-3fce-4e4b-9fa9-23d4a234d1b1.png)
+
+🔴SignUp Form
+
+![image](https://user-images.githubusercontent.com/103328270/224983535-d86ae90b-b366-42a5-829b-1ecd3c0912cc.png)
+
+🔴Homepage
+
+![image](https://user-images.githubusercontent.com/103328270/224983869-fa12667a-7bf6-4038-ba00-f0526d75ebcf.png)
+
+
