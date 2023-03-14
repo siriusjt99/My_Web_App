@@ -28,7 +28,7 @@
             </asp:DropDownList>
                 <br />
                 <br />
-                <asp:Button ID="Button1" runat="server" Text="Button" />
+                <asp:Button ID="Button1" runat="server" Text="Search" BackColor="#006666" />
             <br />
             <br />
             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" DataKeyNames="patient_id" DataSourceID="SqlDataSource1" GridLines="Horizontal" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
