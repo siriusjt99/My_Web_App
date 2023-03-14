@@ -24,22 +24,25 @@
                 <br />
             <br />
             <span class="auto-style1">Search Here&nbsp; </span>
-            <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource2" DataTextField="doctor_name" DataValueField="doctor_name" Width="163px">
+            <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource2" DataTextField="DoctorName" DataValueField="DoctorName" Width="163px">
             </asp:DropDownList>
                 <br />
                 <br />
-                <asp:Button ID="Button1" runat="server" Text="Button" />
+                <br />
+                <asp:Button ID="Button1" runat="server" Text="Search" BackColor="#009999" Height="40px" Width="134px" />
+                <br />
+                <br />
             <br />
             <br />
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" DataKeyNames="patient_id" DataSourceID="SqlDataSource1" GridLines="Horizontal" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" DataKeyNames="PatientID" DataSourceID="SqlDataSource1" GridLines="Horizontal" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
                 <Columns>
 
-                    <asp:BoundField DataField="patient_id" HeaderText="patient_id" ReadOnly="True" SortExpression="patient_id" />
-                    <asp:BoundField DataField="patient_name" HeaderText="patient_name" SortExpression="patient_name" />
-                    <asp:BoundField DataField="date_of_registration" HeaderText="date_of_registration" SortExpression="date_of_registration" />
-                    <asp:BoundField DataField="doctor_name" HeaderText="doctor_name" SortExpression="doctor_name" />
+                    <asp:BoundField DataField="PatientID" HeaderText="PatientID" InsertVisible="False" ReadOnly="True" SortExpression="PatientID" />
+                    <asp:BoundField DataField="PatientName" HeaderText="PatientName" SortExpression="PatientName" />
+                    <asp:BoundField DataField="RegistrationDate" HeaderText="RegistrationDate" SortExpression="RegistrationDate" />
+                    <asp:BoundField DataField="Age" HeaderText="Age" SortExpression="Age" />
 
-                    <asp:CommandField ShowEditButton="True" ShowDeleteButton="True" />
+                    <asp:BoundField DataField="DoctorName" HeaderText="DoctorName" SortExpression="DoctorName" />
 
 
                 </Columns>
@@ -56,13 +59,10 @@
             <br />
                 </center>
         </div>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:doc_infoDBConnectionString %>" SelectCommand="SELECT * FROM [patient_datatbl] WHERE ([doctor_name] = @doctor_name)">
-            <SelectParameters>
-                <asp:ControlParameter ControlID="DropDownList1" Name="doctor_name" PropertyName="SelectedValue" Type="String" />
-            </SelectParameters>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Doc_MConnectionString %>" SelectCommand="SELECT * FROM [Patients]">
         </asp:SqlDataSource>
         <br />
-        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:doc_infoDBConnectionString %>" SelectCommand="SELECT [doctor_name] FROM [doctors_tbl]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:Doc_MConnectionString %>" SelectCommand="SELECT [DoctorName] FROM [Doctors]"></asp:SqlDataSource>
 
 
     </form>

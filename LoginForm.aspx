@@ -81,7 +81,7 @@
                             <asp:Button ID="Button2" runat="server" BackColor="#0066FF" BorderStyle="None" Text="Sign In" OnClick="Button2_Click" OnClientClick="return ValidateForm();" Height="40px" Width="123px" />
                         </p>
                             <p class="card-title">
-                                &nbsp;</p>
+                                new user?</p>
                         <p class="card-title">
                             <asp:Button ID="Button3" runat="server" BackColor="#009999" BorderColor="#CCCCCC" BorderStyle="None" Text="Sign Up " OnClick="Button3_Click" Height="38px" Width="127px" />
                         </p>

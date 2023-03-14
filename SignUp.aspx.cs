@@ -20,8 +20,18 @@ namespace My_Web_App
         }
 
         protected void Button2_Click(object sender, EventArgs e)
-        {
+        
+            {
+                if (Page.IsValid)
+                {
+                    string userName = TextBox1.Text.Trim();
+                    string password = TextBox2.Text.Trim();
 
-        }
+                    // TODO: insert code to save user info to database
+
+                    Response.Redirect("dashboard.aspx");
+                }
+            }
+        
     }
 }

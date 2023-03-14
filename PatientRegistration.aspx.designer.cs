@@ -11,7 +11,7 @@ namespace My_Web_App
 {
 
 
-    public partial class SignUp
+    public partial class PatientRegistration
     {
 
         /// <summary>
@@ -24,48 +24,57 @@ namespace My_Web_App
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Image1 control.
+        /// txtPatientName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.WebControls.TextBox txtPatientName;
 
         /// <summary>
-        /// TextBox1 control.
+        /// txtRegistrationDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox txtRegistrationDate;
 
         /// <summary>
-        /// TextBox2 control.
+        /// txtAge control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox txtAge;
 
         /// <summary>
-        /// TextBox3 control.
+        /// txtDoctorName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        protected global::System.Web.UI.WebControls.TextBox txtDoctorName;
 
         /// <summary>
-        /// Button2 control.
+        /// btnSavePatient control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.Button btnSavePatient;
+
+        /// <summary>
+        /// lblPatientId control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPatientId;
     }
 }

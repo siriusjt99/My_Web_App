@@ -72,6 +72,8 @@
     <Content Include="bootstrap\js\jquery-3.3.1.slim.min.js" />
     <Content Include="bootstrap\js\popper.min.js" />
     <Content Include="dashboard.aspx" />
+    <Content Include="DoctorRegistration.aspx" />
+    <Content Include="PatientRegistration.aspx" />
     <Content Include="images\create.jpg" />
     <Content Include="images\DocIcon.png" />
     <Content Include="images\FindDoc.png" />
@@ -81,6 +83,7 @@
     <Content Include="mainCSS.css" />
     <Content Include="SignUp.aspx" />
     <Content Include="Web.config" />
+    <Content Include="Homepage.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="dashboard.aspx.cs">
@@ -89,6 +92,20 @@
     </Compile>
     <Compile Include="dashboard.aspx.designer.cs">
       <DependentUpon>dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorRegistration.aspx.cs">
+      <DependentUpon>DoctorRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DoctorRegistration.aspx.designer.cs">
+      <DependentUpon>DoctorRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PatientRegistration.aspx.cs">
+      <DependentUpon>PatientRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PatientRegistration.aspx.designer.cs">
+      <DependentUpon>PatientRegistration.aspx</DependentUpon>
     </Compile>
     <Compile Include="LoginForm.aspx.cs">
       <DependentUpon>LoginForm.aspx</DependentUpon>
@@ -111,6 +128,13 @@
     </Compile>
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage.aspx.cs">
+      <DependentUpon>Homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Homepage.aspx.designer.cs">
+      <DependentUpon>Homepage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

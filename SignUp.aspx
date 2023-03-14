@@ -98,8 +98,7 @@
                             <p class="card-title">
                                 &nbsp;</p>
                         <p class="card-title">
-                            <asp:Button ID="Button3" runat="server" BackColor="#009999" BorderColor="#CCCCCC" BorderStyle="None" Text="Sign Up " OnClick="Button3_Click" Height="38px" Width="127px" />
-                        </p>
+                            &nbsp;</p>
                         <p class="card-title">&nbsp;</p>
                         </center>
                          </div>
