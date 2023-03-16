@@ -35,4 +35,17 @@ Microsoft SQL Server Management Studio (SSMS)
 
 ![image](https://user-images.githubusercontent.com/103328270/224983869-fa12667a-7bf6-4038-ba00-f0526d75ebcf.png)
 
+🔴Dashboard
+
+![image](https://user-images.githubusercontent.com/103328270/225554565-3a32dafe-cda2-4208-a7ca-a608f4802d13.png)
+
+🔴Patient registration
+
+![image](https://user-images.githubusercontent.com/103328270/225555233-7fd073c7-de36-4f70-b22c-19bf3a636ec8.png)
+
+🔴Doctor registration
+
+![image](https://user-images.githubusercontent.com/103328270/225556179-74fd26be-bf6f-4631-a72d-3152c57b1bc9.png)
+
+
 
