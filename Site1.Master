@@ -28,17 +28,15 @@
       <li class="nav-item">
         <a class="nav-link" href="#">About Us</a>
       </li>
-      
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Register
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="DoctorRegistration.aspx">Add Doctor</a>
-          <a class="dropdown-item" href="PatientRegistration.aspx">Add Patient</a>
-          
-        </div>
+         <li class="nav-item">
+        <a class="nav-link" href="DoctorRegistration.aspx">Add Doctor</a>
       </li>
+         <li class="nav-item">
+        <a class="nav-link" href="PatientRegistration.aspx">Add Patient</a>
+      </li>
+      
+     
+       
     </ul>
   </div>
 </nav>

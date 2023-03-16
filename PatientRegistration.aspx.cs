@@ -64,16 +64,22 @@ namespace My_Web_App
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["Doc_MConnectionString"].ConnectionString);
             con.Open();
 
+            // Enable identity insert for the Patients table
+string enableIdentityInsert = "SET IDENTITY_INSERT Patients ON";
+SqlCommand enableCmd = new SqlCommand(enableIdentityInsert, con);
+enableCmd.ExecuteNonQuery();
+
             //query to insert patient record
-            string query = "INSERT INTO PatientRecords (PatientId, PatientName, RegistrationDate, Age, DoctorName) VALUES (@PatientId, @PatientName, @RegistrationDate, @Age, @DoctorName)";
+            string query = "INSERT INTO Patients (PatientName, RegistrationDate, Age, DoctorName,PatientId) VALUES (@PatientName, @RegistrationDate, @Age, @DoctorName,@PatientId)";
 
             //execute query
             SqlCommand cmd = new SqlCommand(query, con);
-            cmd.Parameters.AddWithValue("@PatientId", patientId);
+            
             cmd.Parameters.AddWithValue("@PatientName", patientName);
             cmd.Parameters.AddWithValue("@RegistrationDate", registrationDate);
             cmd.Parameters.AddWithValue("@Age", age);
             cmd.Parameters.AddWithValue("@DoctorName", doctorName);
+            cmd.Parameters.AddWithValue("@PatientId", patientId);
             cmd.ExecuteNonQuery();
 
             //close connection

@@ -78,7 +78,7 @@ namespace My_Web_App
             cmd.Parameters.AddWithValue("@DoctorId", doctorId);
             cmd.Parameters.AddWithValue("@DoctorName", doctorName);
             cmd.Parameters.AddWithValue("@Specialization", specialization);
-            cmd.Parameters.AddWithValue("@HospitalName", hospitalName);
+            
             cmd.ExecuteNonQuery();
 
             //close connection

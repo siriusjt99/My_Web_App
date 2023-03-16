@@ -73,6 +73,9 @@
     <Content Include="bootstrap\js\popper.min.js" />
     <Content Include="dashboard.aspx" />
     <Content Include="DoctorRegistration.aspx" />
+    <Content Include="images\background.jpg" />
+    <Content Include="NewFolder1\doc_m.sql" />
+    <Content Include="NewFolder1\SQLQuery3.sql" />
     <Content Include="PatientRegistration.aspx" />
     <Content Include="images\create.jpg" />
     <Content Include="images\DocIcon.png" />
@@ -80,7 +83,6 @@
     <Content Include="images\j-user.png" />
     <Content Include="images\patients.png" />
     <Content Include="LoginForm.aspx" />
-    <Content Include="mainCSS.css" />
     <Content Include="SignUp.aspx" />
     <Content Include="Web.config" />
     <Content Include="Homepage.aspx" />
@@ -147,9 +149,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="NewFolder1\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

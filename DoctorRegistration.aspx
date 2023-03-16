@@ -5,6 +5,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Doctor Registration Form</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('images/background.jpg');
+            background-size: cover;
+            font-family: sans-serif;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
